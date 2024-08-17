@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "username": "zhangsan",
+      "password": "123456"
+    },
+    {
+      "username": "lisi123",
+      "password": "789999"
+    },
+    {
+      "username": "wangwu",
+      "password": "qwerty"
+    }
+  ],
+  "email": [
+    {
+      "address": "123456@qq.com",
+      "password": "123456"
+    },
+    {
+      "address": "789999@qq.com",
+      "password": "789999"
+    },
+    {
+      "address": "qwerty@qq.com",
+      "password": "qwerty"
+    }
+  ]
+}
