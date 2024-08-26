@@ -38,7 +38,7 @@ function submitAll() {
 
   //console.log(remember.checked);
   if (remember.checked) {
-    save();//保存cookie
+    save();//保存cookie0
   }
   event.preventDefault();
 }
@@ -98,14 +98,15 @@ function emaillRight() {
     .then(response => response.json())
     .then(fetchedData => {
       data = fetchedData;
-      for (let i = 0; i < data.email.length; i++) {
-        if (account.value == data.email[i].address) {
+      for (let i = 0; i < data.users.length; i++) {
+        if (account.value == data.users[i].email) {
           console.log("邮箱存在");
-          if (password.value == data.email[i].password) {
+          if (password.value == data.users[i].password) {
             console.log("密码正确");
             alert("登录成功");
+            location.href = "/index.html";
             return true;
-            break;
+            
           }
           else {
             console.log("密码错误");
@@ -134,8 +135,8 @@ function usernameRight() {
           if (password.value == data.users[i].password) {
             console.log("密码正确");
             alert("登录成功");
+            location.href = "/index.html";
             return true;
-            break;
           }
           else {
             console.log("密码错误");

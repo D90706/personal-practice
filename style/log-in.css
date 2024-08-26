@@ -1,84 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('../image/log-in-background.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .container {
-  border: 2px solid rgba(128, 126, 126, 0.836);
-  position: absolute;
-  top: 42%;
-  left: 60%;
-  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
-  height: 300px;
-  padding-left: 10px;
+  text-align: center;
+}
+
+h5 {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
 }
 
 input[type="text"],
 input[type="password"] {
-  width: 80%;
-  max-width: 300px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  outline: none;
-  padding-left: 35px;
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 5px 0;
   border: 1px solid #ccc;
-  transition: border-color 0.3s;
+  border-radius: 5px;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
-  border-color: #66afe9;
-}
-
-span {
-  color: red;
-
-  font-size: 12px;
+input[type="checkbox"] {
+  margin-right: 5px;
 }
 
 .submitbtn {
-  width: 90%;
-  background-color: #2f4f3c;
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
   color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-#account {
-  background-image: url('/image/person.png');
+.submitbtn:hover {
+  background-color: #0056b3;
 }
 
-#password {
-  background-image: url('/image/id.png');
+a {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007BFF;
 }
 
-body {
-  background-color: #f2f2f2;
+a:hover {
+  text-decoration: underline;
 }
 
-#img_box_1 {
-  height: 140px;
-  width: 300px;
-  background-image: url("../image/eye.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 11%;
-  left: 50%;
-}
-
-#img_box_1 {
-  height: 140px;
-  width: 300px;
-  background-image: url("../image/eye.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 2%;
-  left: 50%;
-}
-
-#img_box_2 {
-  height: 300px;
-  width: 300px;
-  background-image: url("../image/hand.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 24%;
-  left: 23%;
+#username_error,
+#password_error {
+  color: red;
+  font-size: 14px;
 }
